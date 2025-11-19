@@ -23,7 +23,7 @@ const CreateCompany = () => {
 
         try {
             const res = await axios.post(
-                `${COMPANY_API_END_POINT}/register`,
+                `https://next-hire-vtar.onrender.com/api/v1/company/register`,
                 { companyName },
                 { headers: { "Content-Type": "application/json" }, withCredentials: true }
             );
